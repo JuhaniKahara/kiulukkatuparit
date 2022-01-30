@@ -30,7 +30,8 @@ const data = [{"name": "Tuoppi", "title": "CEO &amp; Founder",
             "description": "Hieman tavallista suurelmaa volatiliteettia euriboreissa, tulikos jotain inflaatiolukuja tauluun?", "img": "aivo.jpg"},
             {"name": "Leevi Letkutsalo", "title": "Letkumestari", "description": "Tupareissa saa polttaa röökiä sisällä", "img": "leevi.jpg"},
             {"name": "Raul Pudding", "title": "Postimies", "description": "Espoolaiseen elämäntyyliin kuuluu silmitön dokaus", "img": "raul.jpg"},
-            {"name": "Adelea Elea Amelia Aleksa Lepistö", "title": "Opiskelija", "description": "Onko siellä sitte viiniä?", "img": "adelea.jpg"}
+            {"name": "Adelea Elea Amelia Aleksa Lepistö", "title": "Opiskelija", "description": "Onko siellä sitte viiniä?", "img": "adelea.jpg"},
+            {"name": "Jokinen", "title": "Tirehtööri", "description": "@Matti Nyt vedetään ja nuuskat sosialisoidaan", "img": "jokinen.jpg"}
           ]
 
 let shuffled = data

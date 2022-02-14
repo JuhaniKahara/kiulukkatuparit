@@ -3,9 +3,11 @@ getTeamMemberHtml = (data) => {
         `<div class="column">
         <div class="team-5">
             <div class="team-img">
-                <img src="images/${data.img}" alt="Team Image">
+                <img src="images/${data.img}">
             </div>
+            
             <div class="team-content">
+                ${data.vip == true ? `<img class="vip" src="images/vip.png">` : ''}  
                 <h2>${data.name}</h2>
                 <h3>${data.title}</h3>
                 <p>${data.description}</p>
@@ -26,12 +28,13 @@ const data = [{"name": "Tuoppi", "title": "CEO &amp; Founder",
             {"name": "Jaakko", "title": "Aito Mäntylä", "description": "Tulen tupareihin ehdottomasti", "img": "jaakko.jpg"},
             {"name": "Meeri", "title": "Opettaja", "description": "Tulen tupareihin mikäli en ole synnyttämässä", "img": "meeri.jpg"},
             {"name": "Ulla", "title": "HKL:n selkäranka", "description": "Jos vetää litran viinaa ja pari lonkkuu, pääsee mihin vaan Kalliosts", "img": "ulla.jpg"},
-            {"name": "Aivo", "title": "Diplomi-insinööri", 
+            {"name": "Aivo", "title": "Diplomi-insinööri", "vip": true,
             "description": "Hieman tavallista suurelmaa volatiliteettia euriboreissa, tulikos jotain inflaatiolukuja tauluun?", "img": "aivo.jpg"},
             {"name": "Leevi Letkutsalo", "title": "Letkumestari", "description": "Tupareissa saa polttaa röökiä sisällä", "img": "leevi.jpg"},
             {"name": "Raul Pudding", "title": "Postimies", "description": "Espoolaiseen elämäntyyliin kuuluu silmitön dokaus", "img": "raul.jpg"},
             {"name": "Adelea Elea Amelia Aleksa Lepistö", "title": "Opiskelija", "description": "Onko siellä sitte viiniä?", "img": "adelea.jpg"},
-            {"name": "Jokinen", "title": "Tirehtööri", "description": "@Matti Nyt vedetään ja nuuskat sosialisoidaan", "img": "jokinen.jpg"}
+            {"name": "Jokinen", "title": "Tirehtööri", "description": "@Matti Nyt vedetään ja nuuskat sosialisoidaan", "img": "jokinen.jpg"},
+            {"name": "Tomi", "title": "Diplomi-insinööri", "description": "Painitaanko??", "img": "tomi.png"}
           ]
 
 let shuffled = data
